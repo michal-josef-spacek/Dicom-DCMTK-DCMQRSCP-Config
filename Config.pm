@@ -155,7 +155,6 @@ sub _serialize_ae {
 		push @{$data_ar}, '# AE Table.';
 	}
 	push @{$data_ar}, 'AETable BEGIN';
-	# TODO Order?
 	foreach my $key (sort keys %{$self->{'ae_table'}}) {
 		my $storage_area = $self->{'ae_table'}->{$key}->{'StorageArea'};
 		my $access = $self->{'ae_table'}->{$key}->{'Access'};
