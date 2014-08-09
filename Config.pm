@@ -215,7 +215,10 @@ sub _serialize_hosts {
 		my ($ae, $host, $port) = @{$self->{'host_table'}->{$key}};
 		push @{$data_ar}, "$key = ($ae, $host, $port)";
 	}
-	# TODO Alias.
+	foreach my $key (sort keys %{$self->{'host_table_symb'}}) {
+		push @{$data_ar}, "$key = ".
+			(join ", ", @{$self->{'host_table_symb'}->{$key}});
+	}
 	push @{$data_ar}, 'HostTable END';
 	return;
 }
