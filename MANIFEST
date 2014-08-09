@@ -1,6 +1,7 @@
 Changes
 Config.pm
 doc/dcmqrcnf.txt
+examples/ex1.pl
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -22,3 +23,5 @@ t/Dicom-DCMTK-DCMQRSCP-Config/00-use.t
 t/Dicom-DCMTK-DCMQRSCP-Config/01-version.t
 t/Dicom-DCMTK-DCMQRSCP-Config/02-pod_coverage.t
 t/Dicom-DCMTK-DCMQRSCP-Config/03-pod.t
+t/Dicom-DCMTK-DCMQRSCP-Config/04-new.t
+t/Dicom-DCMTK-DCMQRSCP-Config/05-parse.t
