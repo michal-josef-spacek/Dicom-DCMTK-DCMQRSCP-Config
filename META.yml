@@ -21,6 +21,7 @@ meta-spec:
 name: Dicom-DCMTK-DCMQRSCP-Config
 no_index:
   directory:
+    - examples
     - inc
     - t
 requires:
