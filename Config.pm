@@ -230,10 +230,10 @@ sub _serialize_vendors {
 		return;
 	}
 	if (@{$data_ar}) {
-		push @{$data_ar}, '# Vendor Table.';
+		push @{$data_ar}, '';
 	}
 	if ($self->{'comment'}) {
-		push @{$data_ar}, '';
+		push @{$data_ar}, '# Vendor Table.';
 	}
 	push @{$data_ar}, 'VendorTable BEGIN';
 	foreach my $key (sort keys %{$self->{'vendor_table'}}) {
