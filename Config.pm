@@ -254,3 +254,206 @@ sub _serialize_vendors {
 1;
 
 __END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Dicom::DCMTK::DCMQRSCP::Config - Perl class for reading/writing DCMTK dcmqrscp configuration file.
+
+=head1 SYNOPSIS
+
+ use Dicom::DCMTK::DCMQRSCP::Config;
+ my $obj = Dicom::DCMTK::DCMQRSCP::Config->new(%parameters);
+ $obj->parse($data);
+ my $data = $obj->serialize;
+
+=head1 METHODS
+
+=over 8
+
+=item C<new(%parameters)>
+
+Constructor.
+
+=over 8
+
+=item * C<ae_table>
+
+ AE table.
+ Default value is {}
+
+=item * C<comment>
+
+ Flag, that means comments in serialize() output.
+ Default value is 1.
+
+=item * C<global>
+
+ Global parameters.
+ Default value is {
+         'NetworkTCPPort' => undef,
+         'MaxPDUSize' => undef,
+         'MaxAssociations' => undef,
+         'UserName' => undef,
+         'GroupName' => undef,
+ };
+
+=item * C<host_table>
+
+ Host table.
+ Default value is {}.
+
+=item * C<host_table_symb>
+
+ Host table symbolic names.
+ Default value is {}.
+
+=item * C<vendor_table>
+
+ Vendor table.
+ Default value is {}.
+
+=back
+
+=item C<parse($data)>
+
+ Parse $data, which contains dcmqrscp configuration data.
+ Returns undef.
+
+=item C<serialize()>
+
+ Serialize object to DCMTK dcmqrscp configuration data.
+ Returns string with dcmqrscp configuration data.
+
+=back
+
+=head1 ERRORS
+
+ new():
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Dicom::DCMTK::DCMQRSCP::Config;
+
+ # Object.
+ my $obj = Dicom::DCMTK::DCMQRSCP::Config->new(
+         'ae_table' => {
+                 'ACME_PUB' => {
+                         'Access' => 'R',
+                         'Peers' => 'ANY',
+                         'Quota' => {
+                                 'maxBytesPerStudy' => '24mb',
+                                 'maxStudies' => '10',
+                         },
+                         'StorageArea' => '/dicom/ACME_PUB',
+                 },
+                 'ACME_PRV' => {
+                         'Access' => 'RW',
+                         'Peers' => 'Acme',
+                         'Quota' => {
+                                 'maxBytesPerStudy' => '24mb',
+                                 'maxStudies' => '10',
+                         },
+                         'StorageArea' => '/dicom/ACME_PRV',
+                 },
+         },
+         'comment' => 1,
+         'global' => {
+                 'GroupName' => 'dcmtk',
+                 'MaxAssociations' => 20,
+                 'MaxPDUSize' => 8192,
+                 'NetworkTCPPort' => 104,
+                 'UserName' => 'dcmtk',
+         },
+         'host_table' => {
+                 'Acme_1' => [
+                         'ACME_DN1',
+                         'acme',
+                         10001
+                 ],
+                 'Acme_2' => [
+                         'ACME_DN2',
+                         'acme',
+                         10001
+                 ],
+                 'Acme_3' => [
+                         'ACME_DN3',
+                         'acme',
+                         10001
+                 ],
+         },
+         'host_table_symb' => {
+                 'Acme' => [
+                         'Acme_1',
+                         'Acme_2',
+                         'Acme_3',
+                 ],
+         },
+         'vendor_table' => {
+                 'Acme' => 'ACME CT Company',
+         },
+ );
+
+ # Serialize and print
+ print $obj->serialize."\n";
+
+ # Output:
+ # # Global Configuration Parameters.
+ # GroupName = "dcmtk"
+ # MaxAssociations = 20
+ # MaxPDUSize = 8192
+ # NetworkTCPPort = 104
+ # UserName = "dcmtk"
+ # 
+ # # Host Table.
+ # HostTable BEGIN
+ # Acme_1 = (ACME_DN1, acme, 10001)
+ # Acme_2 = (ACME_DN2, acme, 10001)
+ # Acme_3 = (ACME_DN3, acme, 10001)
+ # Acme = Acme_1, Acme_2, Acme_3
+ # HostTable END
+ # 
+ # # Vendor Table.
+ # VendorTable BEGIN
+ # "ACME CT Company" = Acme
+ # VendorTable END
+ # 
+ # # AE Table.
+ # AETable BEGIN
+ # ACME_PRV /dicom/ACME_PRV RW (10, 24mb) Acme
+ # ACME_PUB /dicom/ACME_PUB R (10, 24mb) ANY
+ # AETable END
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
