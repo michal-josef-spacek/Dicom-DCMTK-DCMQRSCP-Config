@@ -17,6 +17,7 @@ META.yml
 README
 t/data/ex1.conf
 t/data/ex2.conf
+t/data/ex3.conf
 t/Dicom-DCMTK-DCMQRSCP-Config/00-use.t
 t/Dicom-DCMTK-DCMQRSCP-Config/01-version.t
 t/Dicom-DCMTK-DCMQRSCP-Config/02-pod_coverage.t
