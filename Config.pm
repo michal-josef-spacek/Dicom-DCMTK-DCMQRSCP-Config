@@ -28,6 +28,7 @@ sub new {
 # Parse configuration.
 sub parse {
 	my ($self, $data) = @_;
+	$self->_default;
 	my $stay = 0;
 	foreach my $line (split m/\n/ms, $data) {
 		if ($line =~ m/^\s*#/ms || $line =~ m/^\s*$/ms) {
