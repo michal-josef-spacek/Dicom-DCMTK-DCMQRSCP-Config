@@ -15,29 +15,8 @@ sub new {
 	my ($class, @params) = @_;
 	my $self = bless {}, $class;
 
-	# AE table.
-	$self->{'ae_table'} = {};
-
 	# Comment.
 	$self->{'comment'} = 1;
-
-	# Global parameters.
-	$self->{'global'} = {
-		'NetworkTCPPort' => undef,
-		'MaxPDUSize' => undef,
-		'MaxAssociations' => undef,
-		'UserName' => undef,
-		'GroupName' => undef,
-	};
-
-	# Host table.
-	$self->{'host_table'} = {};
-
-	# Host table symbolic names.
-	$self->{'host_table_symb'} = {};
-
-	# Vendor table.
-	$self->{'vendor_table'} = {};
 
 	# Process params.
 	set_params($self, @params);
@@ -140,6 +119,34 @@ sub serialize {
 	$self->_serialize_vendors(\@data);
 	$self->_serialize_ae(\@data);
 	return join "\n", @data;
+}
+
+# Set variables to defaults.
+sub _default {
+	my $self = shift;
+	
+	# AE table.
+	$self->{'ae_table'} = {};
+
+	# Global parameters.
+	$self->{'global'} = {
+		'NetworkTCPPort' => undef,
+		'MaxPDUSize' => undef,
+		'MaxAssociations' => undef,
+		'UserName' => undef,
+		'GroupName' => undef,
+	};
+
+	# Host table.
+	$self->{'host_table'} = {};
+
+	# Host table symbolic names.
+	$self->{'host_table_symb'} = {};
+
+	# Vendor table.
+	$self->{'vendor_table'} = {};
+
+	return;
 }
 
 # Serialize AE titles.
