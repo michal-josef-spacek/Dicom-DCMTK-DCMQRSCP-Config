@@ -53,7 +53,7 @@ sub parse {
 
 		# Host in host table.
 		} elsif ($stay == 2
-			&& $line =~ m/^\s*(\w+)\s*=\s*\(([\w\s,]+)\)\s*$/ms) {
+			&& $line =~ m/^\s*(\w+)\s*=\s*\(([\d\.\w\s,]+)\)\s*$/ms) {
 
 			$self->{'host_table'}->{$1} = [split m/\s*,\s*/ms, $2];
 
