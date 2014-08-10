@@ -15,6 +15,9 @@ sub new {
 	my ($class, @params) = @_;
 	my $self = bless {}, $class;
 
+	# Defaults.
+	$self->_default;
+
 	# Comment.
 	$self->{'comment'} = 1;
 
