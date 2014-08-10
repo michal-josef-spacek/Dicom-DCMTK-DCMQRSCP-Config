@@ -159,10 +159,10 @@ sub _serialize_ae {
 	if (! keys %{$self->{'ae_table'}}) {
 		return;
 	}
-	if (@{$data_ar}) {
-		push @{$data_ar}, '';
-	}
 	if ($self->{'comment'}) {
+		if (@{$data_ar}) {
+			push @{$data_ar}, '';
+		}
 		push @{$data_ar}, '# AE Table.';
 	}
 	push @{$data_ar}, 'AETable BEGIN';
@@ -189,10 +189,10 @@ sub _serialize_global {
 
 		return;
 	}
-	if (@{$data_ar}) {
-		push @{$data_ar}, '';
-	}
 	if ($self->{'comment'}) {
+		if (@{$data_ar}) {
+			push @{$data_ar}, '';
+		}
 		push @{$data_ar}, '# Global Configuration Parameters.';
 	}
 	foreach my $key (sort keys %{$self->{'global'}}) {
@@ -214,10 +214,10 @@ sub _serialize_hosts {
 	if (! keys %{$self->{'host_table'}}) {
 		return;
 	}
-	if (@{$data_ar}) {
-		push @{$data_ar}, '';
-	}
 	if ($self->{'comment'}) {
+		if (@{$data_ar}) {
+			push @{$data_ar}, '';
+		}
 		push @{$data_ar}, '# Host Table.';
 	}
 	push @{$data_ar}, 'HostTable BEGIN';
@@ -239,10 +239,10 @@ sub _serialize_vendors {
 	if (! keys %{$self->{'vendor_table'}}) {
 		return;
 	}
-	if (@{$data_ar}) {
-		push @{$data_ar}, '';
-	}
 	if ($self->{'comment'}) {
+		if (@{$data_ar}) {
+			push @{$data_ar}, '';
+		}
 		push @{$data_ar}, '# Vendor Table.';
 	}
 	push @{$data_ar}, 'VendorTable BEGIN';
