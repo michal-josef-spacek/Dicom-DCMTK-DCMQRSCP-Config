@@ -2,10 +2,12 @@ TODO
 ====
 2. Resit itegritu dat?
 3. Je nutne resit poradi v AE sekci?
-4. Testy pro serialize().
 5.
 
 Applied
 =======
 1. Prvni verze.
 OK [20140809] skim
+
+4. Testy pro serialize().
+OK [20140810] skim

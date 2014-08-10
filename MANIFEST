@@ -25,3 +25,4 @@ t/Dicom-DCMTK-DCMQRSCP-Config/02-pod_coverage.t
 t/Dicom-DCMTK-DCMQRSCP-Config/03-pod.t
 t/Dicom-DCMTK-DCMQRSCP-Config/04-new.t
 t/Dicom-DCMTK-DCMQRSCP-Config/05-parse.t
+t/Dicom-DCMTK-DCMQRSCP-Config/06-serialize.t
