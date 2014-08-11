@@ -25,6 +25,7 @@ test_requires 'File::Object' => 0.08;
 test_requires 'Test::More' => 0;
 test_requires 'Test::Pod' => 0;
 test_requires 'Test::Pod::Coverage' => 0;
+test_requires 'Perl6::Slurp' => 0;
 tests_recursive;
 version '0.02';
 
