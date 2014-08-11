@@ -8,4 +8,4 @@ use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
-is($Dicom::DCMTK::DCMQRSCP::Config::VERSION, 0.01, 'Version.');
+is($Dicom::DCMTK::DCMQRSCP::Config::VERSION, 0.02, 'Version.');
