@@ -1,4 +1,5 @@
 0.02
+ - Fix test dependencies.
  - Regenerate examples/ex1.pl example.
 
 0.01 2014-08-11T08:52:52+02:00
