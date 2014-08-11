@@ -36,4 +36,4 @@ resources:
   homepage: https://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config
   license: http://opensource.org/licenses/BSD-3-Clause
   repository: git://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config
-version: 0.02
+version: 0.03
