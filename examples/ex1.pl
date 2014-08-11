@@ -70,4 +70,28 @@ my $obj = Dicom::DCMTK::DCMQRSCP::Config->new(
 print $obj->serialize."\n";
 
 # Output:
-# TODO
+# # Global Configuration Parameters.
+# GroupName = "dcmtk"
+# MaxAssociations = 20
+# MaxPDUSize = 8192
+# NetworkTCPPort = 104
+# UserName = "dcmtk"
+# 
+# # Host Table.
+# HostTable BEGIN
+# Acme_1 = (ACME_DN1, acme, 10001)
+# Acme_2 = (ACME_DN2, acme, 10001)
+# Acme_3 = (ACME_DN3, acme, 10001)
+# Acme = Acme_1, Acme_2, Acme_3
+# HostTable END
+# 
+# # Vendor Table.
+# VendorTable BEGIN
+# "ACME CT Company" = Acme
+# VendorTable END
+# 
+# # AE Table.
+# AETable BEGIN
+# ACME_PRV /dicom/ACME_PRV RW (10, 24mb) Acme
+# ACME_PUB /dicom/ACME_PUB R (10, 24mb) ANY
+# AETable END
