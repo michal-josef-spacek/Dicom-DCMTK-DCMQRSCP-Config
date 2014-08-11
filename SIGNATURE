@@ -1,0 +1,55 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 36b3060c656f5c530016f85cb2bf209068f93a29 Changes
+SHA1 256f54f3ebb7a86974458bb997476a07568d3567 Config.pm
+SHA1 62ea8161d1cc7e68c6aa5a240b42a571037b8c51 LICENSE
+SHA1 0bcc65436a1c80c5c044ff5268c62312e3ef5937 MANIFEST
+SHA1 fc943c875a92bdbed8fb0506f22407f78e410ee4 META.yml
+SHA1 811923cd3034084fb5fd1d4ab61f6af05e951874 Makefile.PL
+SHA1 e30682668c28c1126eed5ebaba432bbf7ac383bc README
+SHA1 8211ffdbc766f0669c9f10838c77a13b11c3b35b doc/dcmqrcnf.txt
+SHA1 6bf54dbb81c84d7b89e51bc609dac98e249c2d57 examples/ex1.pl
+SHA1 4f7982f7e554df23debce735ab343d88d7355140 inc/Module/Install.pm
+SHA1 c68c85ca62ae30d83f633975cd9af2a0789f59e0 inc/Module/Install/Base.pm
+SHA1 4797fd314e2653a427e725104704b0320993ba8c inc/Module/Install/Can.pm
+SHA1 b771d93af2bfc41273f48fa36082bf1bd6f21dbe inc/Module/Install/Fetch.pm
+SHA1 f4f3258a505a432a58cbcdc1fd030ef5e8e90985 inc/Module/Install/Makefile.pm
+SHA1 100a0dd8572f0b40373350fdd6c0a6f035d9dc39 inc/Module/Install/Metadata.pm
+SHA1 79f5b4199f622e8b05aac266b0c39f6a85bb303f inc/Module/Install/ReadmeFromPod.pm
+SHA1 4490fed943f4e556db9fd054b7ec8765ca417f7d inc/Module/Install/Win32.pm
+SHA1 8464ddf690b9f7036a0974ff172ec0ced2f6a329 inc/Module/Install/WriteAll.pm
+SHA1 71985e896dba4f1f207d35541dda1afbe393b5a3 t/Dicom-DCMTK-DCMQRSCP-Config/00-use.t
+SHA1 c59c73e3f41127cfd2f0bdebe962b4e24e3b5fb5 t/Dicom-DCMTK-DCMQRSCP-Config/01-version.t
+SHA1 38be8b791e0f43ee0fd351b2788560dc6b2278bb t/Dicom-DCMTK-DCMQRSCP-Config/02-pod_coverage.t
+SHA1 ebdab77f9f54244b90eef000892f680f796e16a7 t/Dicom-DCMTK-DCMQRSCP-Config/03-pod.t
+SHA1 56a3367b752aeaaca387e5d82a57e9d674fa628b t/Dicom-DCMTK-DCMQRSCP-Config/04-new.t
+SHA1 3e34a0424474a2366836f94e9e52b77914291597 t/Dicom-DCMTK-DCMQRSCP-Config/05-parse.t
+SHA1 249f6842aad644c5f3bde7fc76e9a3f9dbaafba5 t/Dicom-DCMTK-DCMQRSCP-Config/06-serialize.t
+SHA1 73085fd26eef2ab24860c4cd1213d75e185e7b9b t/data/ex1.conf
+SHA1 512967dccdd35e47bc5b76f4e9f1b316081cb61f t/data/ex2.conf
+SHA1 d3e6c58d8c1bd1479dee051a87a044ba4456e6b2 t/data/ex3.conf
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJT6GhKAAoJEAwa+cf4dLBaoTMH/2wnmRbl+AVr1rTDSFUW4+Q5
+L56erocIt7Li0NpCNinjqQkHO7mNlqDgTMJGWOugDXNZhI4r8lLcKLgzqmgMYuRE
+wPXwYvz2imBBMjziOI3qrZH4IX17EA1bCBqmEPOHhuD06xs/tUpRwmM+UhYcgYj0
+dF1HiqyWByJSieeAIHZk9rLg1H3sWY+judlU2JVStUxBlmp8klLMZXh/cesWuw/2
+0ZimGlzzS5zhsytI/hBQY4uixjzKcAYPuL+eFJT+6bSef4w2t9pcJs+Bh1dFT2h/
+Ai9vDuWZVH3814gijol/UxtoZVFK70cLgMRUqRVRKcm22/bRQYHZaRt7PMFk5LU=
+=/3HG
+-----END PGP SIGNATURE-----
