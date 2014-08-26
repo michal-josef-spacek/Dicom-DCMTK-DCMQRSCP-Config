@@ -1,4 +1,5 @@
 0.03
+ - Sort modules in test.
 
 0.02 2014-08-11T09:47:29+02:00
  - Fix test dependencies.
