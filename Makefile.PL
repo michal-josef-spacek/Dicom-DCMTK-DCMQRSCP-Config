@@ -7,7 +7,7 @@ use inc::Module::Install;
 
 # Definition.
 abstract 'Perl class for reading/writing DCMTK dcmqrscp configuration file.';
-author 'Michal Špaček <skim@cpan.org>';
+author 'Michal Spacek <skim@cpan.org>';
 license 'bsd';
 name 'Dicom-DCMTK-DCMQRSCP-Config';
 readme_from 'Config.pm';
