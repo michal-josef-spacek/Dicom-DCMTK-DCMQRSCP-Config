@@ -15,7 +15,7 @@ METHODS
             *       "ae_table"
 
                      AE table.
-                     Default value is {}
+                     Default value is {}.
 
             *       "comment"
 

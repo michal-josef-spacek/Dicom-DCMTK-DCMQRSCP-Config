@@ -286,7 +286,7 @@ Constructor.
 =item * C<ae_table>
 
  AE table.
- Default value is {}
+ Default value is {}.
 
 =item * C<comment>
 
