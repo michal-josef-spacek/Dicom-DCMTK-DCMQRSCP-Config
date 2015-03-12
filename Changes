@@ -1,5 +1,6 @@
 0.03
  - Sort modules in test.
+ - Update LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.14 version.
  - Update copyright years.
 
