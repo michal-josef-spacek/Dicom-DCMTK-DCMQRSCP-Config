@@ -1,4 +1,4 @@
-0.03
+0.03 2015-10-08T21:20:22+02:00
  - Add SEE ALSO section to doc.
  - Move author tests to xt/ directory.
  - Sort modules in test.
