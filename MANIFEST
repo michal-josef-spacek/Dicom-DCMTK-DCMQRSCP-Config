@@ -3,6 +3,8 @@ Config.pm
 doc/dcmqrcnf.txt
 examples/ex1.pl
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -20,10 +22,10 @@ SIGNATURE
 t/data/ex1.conf
 t/data/ex2.conf
 t/data/ex3.conf
-t/Dicom-DCMTK-DCMQRSCP-Config/00-use.t
-t/Dicom-DCMTK-DCMQRSCP-Config/01-version.t
-t/Dicom-DCMTK-DCMQRSCP-Config/02-pod_coverage.t
-t/Dicom-DCMTK-DCMQRSCP-Config/03-pod.t
-t/Dicom-DCMTK-DCMQRSCP-Config/04-new.t
-t/Dicom-DCMTK-DCMQRSCP-Config/05-parse.t
-t/Dicom-DCMTK-DCMQRSCP-Config/06-serialize.t
+t/Dicom-DCMTK-DCMQRSCP-Config/01-use.t
+t/Dicom-DCMTK-DCMQRSCP-Config/02-version.t
+t/Dicom-DCMTK-DCMQRSCP-Config/03-new.t
+t/Dicom-DCMTK-DCMQRSCP-Config/04-parse.t
+t/Dicom-DCMTK-DCMQRSCP-Config/05-serialize.t
+xt/Dicom-DCMTK-DCMQRSCP-Config/01-pod_coverage.t
+xt/Dicom-DCMTK-DCMQRSCP-Config/02-pod.t
