@@ -1,4 +1,5 @@
 0.03
+ - Add SEE ALSO section to doc.
  - Sort modules in test.
  - Update LICENSE AND COPYRIGHT section in doc.
  - Update Module::Install to 1.16 version.

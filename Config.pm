@@ -441,6 +441,16 @@ Constructor.
 
 L<Class::Utils>.
 
+=head1 SEE ALSO
+
+=over
+
+=item L<Task::Dicom>
+
+Install the Dicom modules.
+
+=back
+
 =head1 REPOSITORY
 
 L<https://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config>

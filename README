@@ -161,6 +161,10 @@ EXAMPLE
 DEPENDENCIES
     Class::Utils.
 
+SEE ALSO
+    Task::Dicom
+        Install the Dicom modules.
+
 REPOSITORY
     <https://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config>
 
