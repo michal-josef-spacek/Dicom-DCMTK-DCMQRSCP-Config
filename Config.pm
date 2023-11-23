@@ -1,13 +1,10 @@
 package Dicom::DCMTK::DCMQRSCP::Config;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 
-# Version.
 our $VERSION = 0.04;
 
 # Constructor.
@@ -341,11 +338,9 @@ Constructor.
 
 =head1 EXAMPLE
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Dicom::DCMTK::DCMQRSCP::Config;
 
  # Object.
