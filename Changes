@@ -1,4 +1,5 @@
 0.04
+ - Fix use lib '.'.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SYNOPSIS section in doc.
  - Move bugtracker to github.
