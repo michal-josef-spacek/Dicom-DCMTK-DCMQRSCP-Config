@@ -4,6 +4,7 @@ NAME
 
 SYNOPSIS
      use Dicom::DCMTK::DCMQRSCP::Config;
+
      my $obj = Dicom::DCMTK::DCMQRSCP::Config->new(%parameters);
      $obj->parse($data);
      my $data = $obj->serialize;

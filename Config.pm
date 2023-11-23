@@ -266,6 +266,7 @@ Dicom::DCMTK::DCMQRSCP::Config - Perl class for reading/writing DCMTK dcmqrscp c
 =head1 SYNOPSIS
 
  use Dicom::DCMTK::DCMQRSCP::Config;
+
  my $obj = Dicom::DCMTK::DCMQRSCP::Config->new(%parameters);
  $obj->parse($data);
  my $data = $obj->serialize;
