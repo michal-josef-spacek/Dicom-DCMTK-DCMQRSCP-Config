@@ -19,8 +19,8 @@ recursive_author_tests('xt');
 requires 'Class::Utils' => 0.05;
 requires 'Error::Pure' => 0.16;
 requires 'perl' => '5.6.2';
-resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
-	'?Name=Dicom-DCMTK-DCMQRSCP-Config';
+resources 'bugtracker' => 'https://github.com/michal-josef-spacek/'.
+	'Dicom-DCMTK-DCMQRSCP-Config/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/'.
 	'Dicom-DCMTK-DCMQRSCP-Config';
 resources 'repository' => 'git://github.com/michal-josef-spacek/'.
