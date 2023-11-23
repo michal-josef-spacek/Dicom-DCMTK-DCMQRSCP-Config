@@ -353,6 +353,8 @@ Returns string with dcmqrscp configuration data.
 
 =head1 EXAMPLE
 
+=for comment filename=serialize_example_config.pl
+
  use strict;
  use warnings;
 
