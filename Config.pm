@@ -448,7 +448,7 @@ Install the Dicom modules.
 
 =head1 REPOSITORY
 
-L<https://github.com/tupinek/Dicom-DCMTK-DCMQRSCP-Config>
+L<https://github.com/michal-josef-spacek/Dicom-DCMTK-DCMQRSCP-Config>
 
 =head1 AUTHOR
 

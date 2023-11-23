@@ -21,9 +21,9 @@ requires 'Error::Pure' => 0.16;
 requires 'perl' => '5.6.2';
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Dicom-DCMTK-DCMQRSCP-Config';
-resources 'homepage' => 'https://github.com/tupinek/'.
+resources 'homepage' => 'https://github.com/michal-josef-spacek/'.
 	'Dicom-DCMTK-DCMQRSCP-Config';
-resources 'repository' => 'git://github.com/tupinek/'.
+resources 'repository' => 'git://github.com/michal-josef-spacek/'.
 	'Dicom-DCMTK-DCMQRSCP-Config';
 test_requires 'English' => 0;
 test_requires 'Error::Pure::Utils' => 0.16,
