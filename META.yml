@@ -1,7 +1,7 @@
 ---
 abstract: 'Perl class for reading/writing DCMTK dcmqrscp configuration file.'
 author:
-  - 'Michal Spacek <skim@cpan.org>'
+  - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
   English: 0
   Error::Pure::Utils: 0.16
